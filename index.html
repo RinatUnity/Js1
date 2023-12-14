@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Основы JS</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let name;
+    name = prompt ("Как тебя зовут?", "Введите имя");
+    console.log(`Привет , ${name} !`);
+    let h = 30;
+    let d = 50;
+    let s;
+    s = (h*d)*0.5;
+    console.log(`Площадь треугольника - ${s}`);
+    let min = 12;
+    let max = 67;
+    let shag = 67-12;
+    let a = Math.random() * shag;
+    a = Math.round(a);
+    console.log(`Случайное число ${min+a}`);
+    let r1 = Math.round(Math.random()*255);
+    let g1 = Math.round(Math.random()*255);
+    let b1 = Math.round(Math.random()*255);
+    let alfa = +Math.random().toFixed(2);
+    console.log(`${r1},${g1},${g1},${alfa}`);
+    let ran = Math.round(Math.random()*(2592e6 - 864e5));
+    let den = Math.round(ran/864e5);
+    ran = ran % 864e5;
+    let chas = Math.round(ran/36e6);
+    ran = ran % 36e6;
+    let minut = Math.round(ran/6e4);
+    ran = ran % 6e4;
+    let sec = Math.round(ran/1e3);
+    let mc = ran % 1e3;
+    console.log(`днеи-${den},часов-${chas},минут-${minut},секунд-${sec},миллисекунд-${mc}.`);
+
+</script>
+</html>
